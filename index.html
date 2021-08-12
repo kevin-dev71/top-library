@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project - The Odin Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="nav-logo">Library - The Odin Project</h2>
+      <a class="nav-link btn-new_book" href="#">Add Book</a>
+    </nav>
+    <main>
+      <section class="books"></section>
+    </main>
+
+    <!-- NEW BOOK FORM -->
+    <div class="form-overlay">
+      <div class="form">
+        <span class="close-form">
+          <i class="uit uit-multiply"></i>
+        </span>
+        <h2>New Book</h2>
+        <form class="book-form">
+          <input
+            class="input"
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Title"
+            required
+            autocomplete="off"
+          />
+          <input
+            class="input"
+            type="text"
+            id="author"
+            name="author"
+            placeholder="Author"
+            required
+            autocomplete="off" 
+          />
+          <input
+            class="input"
+            type="number"
+            name="pages"
+            id="pages"
+            placeholder="Pages"
+            required
+            autocomplete="off" 
+          />
+          <div class="form-buttons">
+            <button class="btn btn-ok" type="submit">Save</button>
+            <button class="btn btn-cancel">Cancel</button>
+          </div>          
+        </form>
+      </div>
+    </div>
+    <!-- END OF NEW BOOK FORM -->
+  </body>
+</html>
